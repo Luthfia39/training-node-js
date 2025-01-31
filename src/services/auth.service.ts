@@ -130,6 +130,10 @@ const logout = async (userId: string) => {
 const job = cron.schedule(
   "*/5 * * * * *",
   () => {
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
     console.log("[Scheduler] - Running every 5 seconds...")
   },
   {
@@ -142,6 +146,23 @@ const scheduler = (data: string) => {
     return job.start()
   } else {
     return job.stop()
+<<<<<<< Updated upstream
+=======
+=======
+    console.log("[SCHEDULER] - Running every 5 seconds...")
+  },
+  { scheduled: false },
+)
+
+const scheduler = async (isStart: boolean) => {
+  if (isStart) {
+    job.start()
+    console.log("[SCHEDULER] - Started")
+  } else {
+    job.stop()
+    console.log("[SCHEDULER] - Stopped")
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   }
 }
 

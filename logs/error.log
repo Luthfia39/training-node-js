@@ -1,2 +1,228 @@
 2024-12-17 16:38:13:3813 [31merror[39m:
 [31mExpected double-quoted property name in JSON at position 38 (line 4 column 1)[39m
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+=======
+2024-12-17 20:26:23:2623 [31merror[39m:
+[31mUser not found[39m
+2024-12-17 20:26:39:2639 [31merror[39m:
+[31mUser not found[39m
+2024-12-17 20:26:54:2654 [31merror[39m:
+[31m"role" is not allowed[39m
+2024-12-17 20:29:31:2931 [31merror[39m:
+[31mMissing Auth Token[39m
+2024-12-18 10:11:56:1156 [31merror[39m:
+[31m"status" must be one of [DONE, ONGOING, PLANNED][39m
+2024-12-18 10:14:58:1458 [31merror[39m:
+[31m"value" must be of type object[39m
+2024-12-18 10:15:52:1552 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.findUnique()` invocation in[39m
+[31mD:\1. PUNYA ADEK\MSIB\Berijalan\Training_Node\templates\src\services\project.service.ts:39:57[39m
+
+[31m  36 }[39m
+[31m  37 [39m
+[31m  38 const projectById = async (id: string) => {[39m
+[31m→ 39     const project = await prisma.project.findUnique({[39m
+[31m           where: {[39m
+[31m             id: {[39m
+[31m               id: "703b139d-8d28-4142-afad-1c04b12df84c"[39m
+[31m             }[39m
+[31m             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m
+[31m           },[39m
+[31m           select: {[39m
+[31m             id: true,[39m
+[31m             title: true,[39m
+[31m             description: true,[39m
+[31m             status: true,[39m
+[31m             deadline: true,[39m
+[31m             owner: {[39m
+[31m               select: {[39m
+[31m                 id: true,[39m
+[31m                 name: true[39m
+[31m               }[39m
+[31m             },[39m
+[31m             Task: true[39m
+[31m           }[39m
+[31m         })[39m
+
+[31mArgument `id`: Invalid value provided. Expected String, provided Object.[39m
+2024-12-18 10:17:10:1710 [31merror[39m:
+[31m"value" must be of type object[39m
+2024-12-18 10:18:11:1811 [31merror[39m:
+[31m"value" must be of type object[39m
+2024-12-18 10:20:56:2056 [31merror[39m:
+[31m"value" must be of type object undefined[39m
+2024-12-18 10:25:24:2524 [31merror[39m:
+[31m"value" must be of type object[39m
+2024-12-18 10:29:46:2946 [31merror[39m:
+[31m"projectId" is required[39m
+2024-12-18 10:36:09:369 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:37:53:3753 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:40:08:408 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:40:54:4054 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:43:15:4315 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:45:40:4540 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:46:32:4632 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:47:43:4743 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:51:16:5116 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:52:17:5217 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:54:17:5417 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:56:57:5657 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:58:18:5818 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:59:28:5928 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:59:36:5936 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 10:59:48:5948 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 11:00:22:022 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 11:03:41:341 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 11:12:00:120 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 11:14:43:1443 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 11:22:16:2216 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.project.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 11:22:40:2240 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.userProject.delete()` invocation:[39m
+
+[31m{[39m
+[31m  where: {[39m
+[31m    id: {[39m
+[31m      id: "67fe34d9-0cd8-499e-8313-0fdbc464b4cb"[39m
+[31m    }[39m
+[31m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `id`: Invalid value provided. Expected String, provided Object.[39m
+2024-12-18 11:23:56:2356 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.userProject.delete()` invocation:[39m
+
+[31m{[39m
+[31m  where: {[39m
+[31m    id: {[39m
+[31m      id: "67fe34d9-0cd8-499e-8313-0fdbc464b4cb"[39m
+[31m    }[39m
+[31m    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[39m
+[31m  }[39m
+[31m}[39m
+
+[31mArgument `id`: Invalid value provided. Expected String, provided Object.[39m
+2024-12-18 11:24:19:2419 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.userProject.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+2024-12-18 11:26:14:2614 [31merror[39m:
+[31m[39m
+[31mInvalid `prisma.userProject.delete()` invocation:[39m
+
+
+[31mAn operation failed because it depends on one or more records that were required but not found. Record to delete does not exist.[39m
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes

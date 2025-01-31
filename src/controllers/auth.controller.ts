@@ -45,6 +45,10 @@ const refreshToken = async (req: Request, res: Response, next: NextFunction) => 
   }
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
 const scheduler = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { isStart } = req.body
@@ -53,6 +57,15 @@ const scheduler = async (req: Request, res: Response, next: NextFunction) => {
     }
     SAuth.scheduler(isStart)
     res.json(formatResponse(true, "success", {}))
+<<<<<<< Updated upstream
+=======
+=======
+const runScheduler = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const scheduler = await SAuth.scheduler(req.body.isStart)
+    res.json(formatResponse(true, "success", scheduler))
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
   } catch (error) {
     next(error)
   }
@@ -62,7 +75,15 @@ const CAuth = {
   login,
   register,
   refreshToken,
+<<<<<<< Updated upstream
   scheduler,
+=======
+<<<<<<< Updated upstream
+  scheduler,
+=======
+  runScheduler
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
 
 export default CAuth
